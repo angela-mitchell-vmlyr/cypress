@@ -7,9 +7,10 @@ describe('Basic Practice', () => {
 
   describe('Adding a new item', () => {
     it('should put a new item on the page after clicking on "Add Item"', () => {
-      cy.get('[data-test="new-item-input"]').type('My self-esteem');
+      const item = 'My self-esteem';
+      cy.get('[data-test="new-item-input"]').type(item);
       cy.get('[data-test="add-item"]').click();
-      cy.contains('My self-esteem');
+      cy.contains(item);
     });
 
     it('should put a new item in the "Unpacked Items" list', () => {
