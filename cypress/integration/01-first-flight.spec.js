@@ -14,4 +14,8 @@ describe('Create a New Item', () => {
         // check if 'Add Item' appears on the page
         cy.contains('Add Item');
     })
+
+    it('should put stuff in an input field', () => {
+        cy.get('[data-test="new-item-input"]').type('Good attitude');
+    });
 });
