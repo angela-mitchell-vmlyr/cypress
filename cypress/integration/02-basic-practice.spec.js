@@ -5,7 +5,6 @@ describe('Basic Practice', () => {
     cy.visit('/jetsetter');
   });
   
-
   describe('Adding a new item', () => {
     it('should put a new item on the page after clicking on "Add Item"', () => {
       // TIP: you can store values in variables in spec files
